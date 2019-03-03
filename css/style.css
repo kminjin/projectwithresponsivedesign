@@ -1,22 +1,36 @@
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr auto 1fr 1fr 1fr;
   grid-template-rows: auto;
-  /* grid-column-gap: 10px;
+  grid-column-gap: 10px;
   grid-row-gap: 10px; */
-  /* background-color: #2196F3; */
+  background-color: #2196F3;
   justify-items: stretch;
   align-items; stretch;
   justify-content: stretch;
   align-content: stretch;
 }
 
-/* .grid-container > div {
-  /* background-color: rgba(255, 255, 255, 0.8); */
-  /* padding: 10px 0; */
-  /* text-align: center */
-  /* text-align: center;
-} */
+
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 0; */
+  text-align: center */
+   text-align: center;
+}
 
 /* NAVIGATION  */
 .nav{
@@ -138,6 +152,71 @@ header a:hover {
   display: block;
 }
 
+
+/* [class*="col-"] {
+  width: 100%;
+} */
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .content h1{
+      font-size: 1.4em;
+      color: blue;
+  }
+  .content p{
+    font-size: .6em;
+    color:green;
+  }
+  .content img{
+    width: 150%;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .content h1{
+      font-size: 1.8em;
+      color:pink;
+  }
+  .content p{
+    font-size: .8em;
+    color:green;
+  }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .content h1{
+    font-size: 2.3em;
+    color:green;
+  }
+  .content p{
+    font-size: 1em;
+    color:green;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .content h1{
+    font-size: 3em;
+    color:red;
+  }
+  .content p{
+    font-size: 1.3em;
+    color:red;
+  }
+}
+
+
+/* $zindex-dropdown:          1000 !default;
+$zindex-sticky:            1020 !default;
+$zindex-fixed:             1030 !default;
+$zindex-modal-backdrop:    1040 !default;
+$zindex-modal:             1050 !default;
+$zindex-popover:           1060 !default;
+$zindex-tooltip:           1070 !default; */
 
 /* .content i {
   text-align: center;
