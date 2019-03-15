@@ -36,17 +36,15 @@
   padding-left: 8px;
   margin-right: auto;
   margin-left: auto;
-  background-color: white;
-  background-image: url('../images/paperbg.jpg')
 }
 
 
 
-.grid-container > div {
+/* .grid-container > div {
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 10px 0; */
+  padding: 10px 0;
   text-align: center;
-}
+}  */
 
 /* NAVIGATION  */
 .nav{
@@ -71,10 +69,12 @@
 
 .navminjin {
     padding: 10px 15px;
+    text-decoration: none;
 }
 
 .navwork, .navabout, .navresume {
     margin-right: 15px;
+    text-decoration: none;
 }
 
 
@@ -87,6 +87,7 @@
 
 body a:hover {
 	color: pink;
+  text-decoration: none;
 }
 
 body a:active{
